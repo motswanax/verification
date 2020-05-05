@@ -8,7 +8,7 @@
 
     <script>
         $(document).ready(function () {
-            var urlParams = new URLSearchParams(location.search);
+            const urlParams = new URLSearchParams(location.search);
             if (urlParams.has('token')) {
                 verifyToken(urlParams.get('token'));
             }
